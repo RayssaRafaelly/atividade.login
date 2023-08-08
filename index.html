@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='login.js'></script>
+</head>
+<body>
+    <div class="container">
+        <h1>FARMÁCIA DO POSTINHO</h1>
+        <label id="nome">Nome:</label>
+        <input class="form-control" id="nomeUser" type="text">
+        <br>
+        <label id="Data">Data:</label>
+        <input class="form-control" id="dataUser" type="date">
+        <br>
+        <label id="Horário">Horário:</label>
+        <input class="form-control" id="horaUser" type="time">
+        <br>
+        <label id="Remédio">Remédio:</label>
+        <input class="form-control" id="remedioUser" type="text">
+        <br>
+        <button class="btn btn-primary" type="button" onclick="salvarUser()">Salvar</button>
+    </div> 
+    <br>
+    <div class="container">
+        <table class="table table-striped" id ="tabela">
+            <tr>
+                <th>Nome</th>
+                <th>Data</th>
+                <th>Horário</th>
+                <th>Remédio</th>
+                <th>Ações</th>
+            </tr>
+        </table>        
+    </div>
+</body>
+</html>
